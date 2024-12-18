@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ervas Medicinais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ervas Medicinais</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#ervas">Ervas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introducao">
+        <h2>O que são Ervas Medicinais?</h2>
+        <p>As ervas medicinais são plantas que contêm substâncias naturais com propriedades terapêuticas. Elas são utilizadas para tratar ou prevenir doenças, além de promoverem o bem-estar.</p>
+    </section>
+
+    <section id="ervas">
+        <h2>Ervas Medicinais Populares</h2>
+        <div class="ervas-lista">
+            <div class="erva" onclick="mostrarInformacoes('camomila')">
+                <h3>Camomila</h3>
+                <p>Calma e alivia estresse</p>
+            </div>
+            <div class="erva" onclick="mostrarInformacoes('alecrim')">
+                <h3>Alecrim</h3>
+                <p>Melhora a memória e circulação</p>
+            </div>
+            <div class="erva" onclick="mostrarInformacoes('hortela')">
+                <h3>Hortelã</h3>
+                <p>Alivia dores de cabeça e digestão</p>
+            </div>
+        </div>
+        <div id="informacoes-erva" class="informacoes-erva">
+            <h3>Detalhes</h3>
+            <p id="informacoes-texto">Clique em uma erva para saber mais.</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ervas Medicinais - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

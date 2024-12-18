@@ -1,0 +1,57 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Altere para o caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* Estilo das abas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tablink {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.tablink:hover {
+    background-color: #45a049;
+}
+
+/* Conteúdo das abas */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Estilo de cada aba quando ativa */
+#aloe, #camomila, #gengibre {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para destaque */
+    border-radius: 10px;
+}
+
+/* Exibir a aba ativa */
+.tabcontent.active {
+    display: block;
+}
